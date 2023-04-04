@@ -51,7 +51,6 @@ def install_edr(
             "run-operation",
             "get_elementary_dbt_pkg_version",
             "--project-dir",
-            "/edr_stager_dbt_project",
         ]
 
         if profile_target:
