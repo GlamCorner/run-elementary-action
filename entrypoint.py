@@ -50,9 +50,11 @@ def install_edr(
             "json",
             "run-operation",
             "get_elementary_dbt_pkg_version",
-            "--project-dir",
         ]
 
+        if project_dir:
+            dbt_command.extend(["--project-dir", project_dir])
+            
         if profile_target:
             dbt_command.extend(["--target", profile_target])
 
