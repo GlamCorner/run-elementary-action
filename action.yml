@@ -44,5 +44,5 @@ inputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  ports:
-    - 5432:5432
+  args:
+    - --net=host
